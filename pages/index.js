@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -13,6 +14,10 @@ export default function Home() {
         <h1 className={styles.title}>
           Learn <a href="https://nextjs.org">Next.js!</a>
         </h1>
+
+        <p className={styles.description}>
+          I've created my very first page! You can check it out here: <Link href='posts/first-post'>My first post!</Link>
+        </p>
 
         <p className={styles.description}>
           Get started by editing <code>pages/index.js</code>
