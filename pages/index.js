@@ -1,12 +1,13 @@
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Create Next App</title>
+        <title>Learning Next</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -18,6 +19,9 @@ export default function Home() {
         <p className={styles.description}>
           I've created my very first page! You can check it out here: <Link href='posts/first-post'>My first post!</Link>
         </p>
+
+        <p>My name is Danier! This is my profile picture:</p>
+        <Image src='/images/profile.jpg' width={144} height={144} alt="Danier's profile picture" />
 
         <p className={styles.description}>
           Get started by editing <code>pages/index.js</code>
