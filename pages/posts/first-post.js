@@ -19,9 +19,7 @@ export default function Post() {
                 </Script>
 
                 <h1>My first post</h1>
-                <h2>
-                   <Link href='/'>Back to home</Link>
-                </h2>
+
             </Layout>
         </>
     )
