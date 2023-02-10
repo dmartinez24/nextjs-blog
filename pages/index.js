@@ -1,14 +1,9 @@
 import Head from 'next/head';
 import Layout, { siteTitle } from '../components/layout';
 import utilStyles from '../styles/utils.module.css';
-import Link from "next/link";
 import {getSortedPostsData} from "../lib/posts";
 
 export default function Home({ allPostsData }) {
-
-    console.log(allPostsData)
-
-
   return (
       <Layout home>
         <Head>
@@ -19,9 +14,6 @@ export default function Home({ allPostsData }) {
           <p>
             (This is a sample website - you’ll be building a site like this on{' '}
             <a href="https://nextjs.org/learn">our Next.js tutorial</a>.)
-          </p>
-          <p>
-              Here I give you a link to my <Link href={'/posts/first-post'}>first post</Link>
           </p>
         </section>
           <br/>
